@@ -72,8 +72,407 @@ function getZodiac(){
     getData();
 }
 async function getData(){
-    let response = await fetch('/Zodiac.json');
-    let data = await response.json();
+    let data = {
+	"ZodiacSignsDetail": [
+		{
+			"Id": 1,
+			"Name": "Aries",
+			"MyanmarMonth": "တန်ခူး",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h1.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/aries.png",
+			"Dates": "March 21 - April 19",
+			"Element": "Fire 🔥",
+			"Energy": "Strong, Emotion, Enthusiastic, Passionate, Temper-mental, Achiever, Interesting",
+			"ElementImageUrl": "images/elements/fire.png",
+			"Traits": [
+				{
+					"Name": "Courageous",
+					"Percentage": 80
+				},
+				{
+					"Name": "Confident",
+					"Percentage": 70
+				},
+				{
+					"Name": "Energetic",
+					"Percentage": 90
+				},
+				{
+					"Name": "Impulsive",
+					"Percentage": 60
+				},
+				{
+					"Name": "Passionate",
+					"Percentage": 75
+				}
+			]
+		},
+		{
+			"Id": 2,
+			"Name": "Taurus",
+			"MyanmarMonth": "ကဆုန်",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h2.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/taurus.png",
+			"Dates": "April 20 - May 20",
+			"Element": "Earth 🪨",
+			"Energy":"Dependable, Grounded, Reliable, Materialistic, Loyal, Practical",
+			"ElementImageUrl": "images/elements/earth.png",
+			"Traits": [
+				{
+					"Name": "Reliable",
+					"Percentage": 70
+				},
+				{
+					"Name": "Patient",
+					"Percentage": 80
+				},
+				{
+					"Name": "Practical",
+					"Percentage": 75
+				},
+				{
+					"Name": "Stubborn",
+					"Percentage": 85
+				},
+				{
+					"Name": "Sensual",
+					"Percentage": 65
+				}
+			]
+		},
+		{
+			"Id": 3,
+			"Name": "Gemini",
+			"MyanmarMonth": "နယုန်",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h3.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/gemini.png",
+			"Dates": "May 21 - June 20",
+			"Element": "Air 🌬️",
+			"Energy":"Powerful, Creativity, Fun, Ideas, Adventurous, Exciting",
+			"ElementImageUrl": "images/elements/air.png",
+			"Traits": [
+				{
+					"Name": "Adaptable",
+					"Percentage": 75
+				},
+				{
+					"Name": "Curious",
+					"Percentage": 85
+				},
+				{
+					"Name": "Intellectual",
+					"Percentage": 80
+				},
+				{
+					"Name": "Inconsistent",
+					"Percentage": 60
+				},
+				{
+					"Name": "Social",
+					"Percentage": 90
+				}
+			]
+		},
+		{
+			"Id": 4,
+			"Name": "Cancer",
+			"MyanmarMonth": "ဝါဆို",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h4.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/cancer.png",
+			"Dates": "June 21 - July 22",
+			"Element": "Water 🌊",
+			"Energy":"Refreshing, Mysterious, Intuitive, Ambitious, Intense, Dreamy, Sensitive",
+			"ElementImageUrl": "images/elements/water.png",
+			"Traits": [
+				{
+					"Name": "Loyal",
+					"Percentage": 85
+				},
+				{
+					"Name": "Emotional",
+					"Percentage": 75
+				},
+				{
+					"Name": "Intuitive",
+					"Percentage": 80
+				},
+				{
+					"Name": "Moody",
+					"Percentage": 70
+				},
+				{
+					"Name": "Protective",
+					"Percentage": 90
+				}
+			]
+		},
+		{
+			"Id": 5,
+			"Name": "Leo",
+			"MyanmarMonth": "ဝါခေါင်",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h5.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/leo.png",
+			"Dates": "July 23 - August 22",
+			"Element": "Fire 🔥",
+			"Energy": "Strong, Emotion, Enthusiastic, Passionate, Temper-mental, Achiever, Interesting",
+			"ElementImageUrl": "images/elements/fire.png",
+			"Traits": [
+				{
+					"Name": "Generous",
+					"Percentage": 80
+				},
+				{
+					"Name": "Creative",
+					"Percentage": 85
+				},
+				{
+					"Name": "Warm-hearted",
+					"Percentage": 75
+				},
+				{
+					"Name": "Arrogant",
+					"Percentage": 65
+				},
+				{
+					"Name": "Dominant",
+					"Percentage": 70
+				}
+			]
+		},
+		{
+			"Id": 6,
+			"Name": "Virgo",
+			"MyanmarMonth": "တော်သလင်း",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h6.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/virgo.png",
+			"Dates": "August 23 - September 22",
+			"Element": "Earth 🪨",
+			"Energy":"Dependable, Grounded, Reliable, Materialistic, Loyal, Practical",
+			"ElementImageUrl": "images/elements/earth.png",
+			"Traits": [
+				{
+					"Name": "Analytical",
+					"Percentage": 90
+				},
+				{
+					"Name": "Practical",
+					"Percentage": 85
+				},
+				{
+					"Name": "Modest",
+					"Percentage": 70
+				},
+				{
+					"Name": "Overcritical",
+					"Percentage": 80
+				},
+				{
+					"Name": "Reliable",
+					"Percentage": 75
+				}
+			]
+		},
+		{
+			"Id": 7,
+			"Name": "Libra",
+			"MyanmarMonth": "သီတင်းကျွတ်",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h7.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/libra.png",
+			"Dates": "September 23 - October 22",
+			"Element": "Air 🌬️",
+			"Energy":"Powerful, Creativity, Fun, Ideas, Adventurous, Exciting",
+			"ElementImageUrl": "images/elements/air.png",
+			"Traits": [
+				{
+					"Name": "Diplomatic",
+					"Percentage": 75
+				},
+				{
+					"Name": "Harmonious",
+					"Percentage": 80
+				},
+				{
+					"Name": "Idealistic",
+					"Percentage": 70
+				},
+				{
+					"Name": "Indecisive",
+					"Percentage": 65
+				},
+				{
+					"Name": "Charming",
+					"Percentage": 85
+				}
+			]
+		},
+		{
+			"Id": 8,
+			"Name": "Scorpio",
+			"MyanmarMonth": "တန်ဆောင်မုန်း",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h8.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/scorpio.png",
+			"Dates": "October 23 - November 21",
+			"Element": "Water 🌊",
+			"Energy":"Refreshing, Mysterious, Intuitive, Ambitious, Intense, Dreamy, Sensitive",
+			"ElementImageUrl": "images/elements/water.png",
+			"Traits": [
+				{
+					"Name": "Passionate",
+					"Percentage": 85
+				},
+				{
+					"Name": "Magnetic",
+					"Percentage": 80
+				},
+				{
+					"Name": "Resolute",
+					"Percentage": 75
+				},
+				{
+					"Name": "Jealous",
+					"Percentage": 70
+				},
+				{
+					"Name": "Secretive",
+					"Percentage": 60
+				}
+			]
+		},
+		{
+			"Id": 9,
+			"Name": "Sagittarius",
+			"MyanmarMonth": "နတ်တော်",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h9.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/saggittarius.png",
+			"Dates": "November 22 - December 21",
+			"Element": "Fire 🔥",
+			"Energy": "Strong, Emotion, Enthusiastic, Passionate, Temper-mental, Achiever, Interesting",
+			"ElementImageUrl": "images/elements/fire.png",
+			"Traits": [
+				{
+					"Name": "Adventurous",
+					"Percentage": 90
+				},
+				{
+					"Name": "Optimistic",
+					"Percentage": 85
+				},
+				{
+					"Name": "Straightforward",
+					"Percentage": 80
+				},
+				{
+					"Name": "Impatient",
+					"Percentage": 70
+				},
+				{
+					"Name": "Versatile",
+					"Percentage": 75
+				}
+			]
+		},
+		{
+			"Id": 10,
+			"Name": "Capricorn",
+			"MyanmarMonth": "ပြာသို",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h10.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/capricorn.png",
+			"Dates": "December 22 - January 19",
+			"Element": "Earth 🪨",
+			"Energy":"Dependable, Grounded, Reliable, Materialistic, Loyal, Practical",
+			"ElementImageUrl": "images/elements/earth.png",
+			"Traits": [
+				{
+					"Name": "Ambitious",
+					"Percentage": 80
+				},
+				{
+					"Name": "Disciplined",
+					"Percentage": 85
+				},
+				{
+					"Name": "Prudent",
+					"Percentage": 75
+				},
+				{
+					"Name": "Pessimistic",
+					"Percentage": 60
+				},
+				{
+					"Name": "Determined",
+					"Percentage": 70
+				}
+			]
+		},
+		{
+			"Id": 11,
+			"Name": "Aquarius",
+			"MyanmarMonth": "တပို့တွဲ",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h11.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/aquarius.png",
+			"Dates": "January 20 - February 18",
+			"Element": "Air 🌬️",
+			"Energy":"Powerful, Creativity, Fun, Ideas, Adventurous, Exciting",
+			"ElementImageUrl": "images/elements/air.png",
+			"Traits": [
+				{
+					"Name": "Independent",
+					"Percentage": 80
+				},
+				{
+					"Name": "Intellectual",
+					"Percentage": 85
+				},
+				{
+					"Name": "Unconventional",
+					"Percentage": 75
+				},
+				{
+					"Name": "Stubborn",
+					"Percentage": 70
+				},
+				{
+					"Name": "Humanitarian",
+					"Percentage": 90
+				}
+			]
+		},
+		{
+			"Id": 12,
+			"Name": "Pisces",
+			"MyanmarMonth": "တပေါင်း",
+			"ZodiacSignImageUrl": "./images/zodiac-signs/h12.svg",
+			"ZodiacSign2ImageUrl": "./images/zodiac-signs-2/pisces.png",
+			"Dates": "February 19 - March 20",
+			"Element": "Water 🌊",
+			"Energy":"Refreshing, Mysterious, Intuitive, Ambitious, Intense, Dreamy, Sensitive",
+			"ElementImageUrl": "images/elements/water.png",
+			"Traits": [
+				{
+					"Name": "Compassionate",
+					"Percentage": 85
+				},
+				{
+					"Name": "Intuitive",
+					"Percentage": 80
+				},
+				{
+					"Name": "Artistic",
+					"Percentage": 75
+				},
+				{
+					"Name": "Escapist",
+					"Percentage": 60
+				},
+				{
+					"Name": "Sensitive",
+					"Percentage": 70
+				}
+			]
+		}
+	]
+}
+
     for (let i = 0; i < data.ZodiacSignsDetail.length; i++) { 
         if (data.ZodiacSignsDetail[i].Name == ZodiacName) { 
 
@@ -110,7 +509,4 @@ async function getData(){
             
         }
     }
-}
-window.onload = () => {
-    getData();
 }
