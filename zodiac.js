@@ -61,7 +61,16 @@ function getChineseZodiac(birthYear) {
 let birthday = document.getElementById('birthday');
 let ChineseZodiac;
 birthday.addEventListener('change', () => {
-    const birthYear = new Date(birthday.value).getFullYear(); // Replace with the desired birth year
+	var birthYear = new Date(birthday.value).getFullYear();
+
+	let bDate = new Date(birthday.value).getDate();
+	let bMonth = new Date(birthday.value).getMonth() + 1;
+
+	if ((bMonth === 1 && bDate > 0 ) || (bMonth === 2 && bDate < 10)) {
+		birthYear -= 1;
+	}
+	console.log(birthYear);
+     // Replace with the desired birth year
     const chineseZodiac = getChineseZodiac(birthYear);
     ChineseZodiac = chineseZodiac;
 });
