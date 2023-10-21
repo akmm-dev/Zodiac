@@ -10,6 +10,7 @@ body{
     height: 100vh;
     background: linear-gradient( to bottom right,
         #3e0039, rgb(31, 0, 51));  
+    overflow: hidden;
 }
 .body{
     position: relative;
