@@ -111,3 +111,6 @@ async function getData(){
         }
     }
 }
+window.onload = () => {
+    getData();
+}
