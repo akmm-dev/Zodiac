@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( to bottom right,
+        #3e0039, rgb(31, 0, 51));  
+}
+.body{
+    position: relative;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    border-radius: 10px;
+}
+.body img{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    object-fit:cover;
+    border-radius: inherit;
+    height: 50%;
+}
+.body form{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: inherit;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    width: 80%;
+    height: 15%;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(42, 0, 53),rgb(255, 182, 242));
+    border-radius:50px;
+    color:white;
+    padding:0 2%;  
+    font-size: 110%;
+}
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    column-gap: 1em;
+    color: white;
+    text-transform: uppercase;
+}
+.next-body{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    height: 100%;
+}
+header h1{
+    border-bottom: 1px solid white ;
+    font-size: 150%;
+    font-weight: 500;
+}
+.main-body{
+    width: 100%;
+    height:60%;
+}
+.card{
+    width: 97%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: scroll;
+    margin: auto;
+}
+.traits{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.traitname{
+    width:100%;
+    height:30%;
+    background-color: rgba(255, 255, 255, 0.724);
+    border-radius: 50px;
+    position: relative;
+}
+.traitbar{
+    width: 50%;
+    background: linear-gradient(to right, rgb(189, 153, 255),rgb(251, 121, 255));
+    height:100%;
+    border-radius: inherit;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 80%;
+    padding:0 3%;
+}
+.details{
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.details img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.detail{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+}
+.detail p{
+    width: 100%;
+    font-size: 70%;
+    text-wrap: wrap;
+}
