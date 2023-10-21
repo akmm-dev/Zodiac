@@ -49,7 +49,8 @@ form input{
     outline: none;
     border:none;
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
-    background: linear-gradient(to right, rgb(42, 0, 53),rgb(220, 133, 255));
+    background: linear-gradient(to right,
+        rgb(31, 0, 51),#3a003e);
     border-radius:50px;
     color:white;
     padding:0 2%;  
