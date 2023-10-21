@@ -47,12 +47,12 @@ birthDay.addEventListener('change', () => {
 })
 
 function getChineseZodiac(birthYear) {
-    const startYear = 1900; // Start year of the Chinese zodiac cycle
-    const zodiacSigns = ["Monkey", "Rooster", "Dog", "Pig", "Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat"];
-    const offset = (birthYear - startYear) % 12; // Calculate the offset from the start year
+	// Start year of the Chinese zodiac cycle
+    const zodiacAnimals = ['MonkeyMonkey🐒', 'Rooster🐓', 'Dog🐕', 'Pig🐖', 'Rat🐀', 'Ox🐂', 'Tiger🐅', 'Rabbit🐇', 'Dragon🐉', 'Snake🐍', 'Horse🐎', 'Sheep🐑'];
+    const offset = (birthYear) % 12; // Calculate the offset from the start year
 
     // Determine the Chinese zodiac sign based on the offset
-    const zodiacSign = zodiacSigns[offset];
+    const zodiacSign = zodiacAnimals[offset];
     return zodiacSign;
 }
 
