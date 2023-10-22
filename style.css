@@ -74,6 +74,7 @@ header{
     display: none;
     width: 100vw;
     height: 100vh;
+    overflow: scroll;
 }
 header img{
     width: 50px;
@@ -87,21 +88,26 @@ header h1{
 }
 .main-body{
     width: 100%;
-    height:60%;
+    height:50%;
+    overflow: scroll;
 }
 .card{
     width: 97%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     overflow: scroll;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .traits{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -111,13 +117,13 @@ header h1{
 .traitname{
     width:100%;
     height:30%;
-    background-color: rgba(255, 255, 255, 0.724);
+    background-color: rgba(255, 255, 255, 0.591);
     border-radius: 50px;
     position: relative;
 }
 .traitbar{
     width: 50%;
-    background: linear-gradient(to right, rgb(189, 153, 255),rgb(251, 121, 255));
+    background: linear-gradient(to right, rgb(164, 114, 255),rgb(106, 0, 109));
     height:100%;
     border-radius: inherit;
     position: absolute;
@@ -130,7 +136,7 @@ header h1{
 }
 .details{
     width: 100%;
-    height: 50%;
+    height: 40%;
     overflow: scroll;
     display: flex;
     align-items: center;
@@ -144,15 +150,63 @@ header h1{
 }
 .detail{
     width: 48%;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
     color: white;
 }
+.e-d{
+    width: 100%;
+    height: 25%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid white;
+    padding:0 5%;
+}
+.detail h6{
+    width: 100%;
+    height: 50%;
+    font-size: 90%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
 .detail p{
     width: 100%;
+    height: 50%;
     font-size: 70%;
     text-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.personalities{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: justify;
+    padding: 1%;
+}
+.personality{
+    width: 100%;
+    height: auto;
+    /* border-left: 1px solid white; */
+    border-bottom: 1px solid white;
+    margin: 2% 0;
+    padding: 2% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.personality h1{
+    font-size: 120%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid white;
+    font-weight: 400;
 }
